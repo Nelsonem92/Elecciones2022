@@ -1,0 +1,592 @@
+{
+	"info": {
+		"_postman_id": "e3277fb3-7ce9-4589-9c4b-9acdbd709d4e",
+		"name": "Grupo 43",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23970798"
+	},
+	"item": [
+		{
+			"name": "REGISTRADURIA",
+			"item": [
+				{
+					"name": "CANDIDATO",
+					"item": [
+						{
+							"name": "createCandidatos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cedula\": \"2223452\",\r\n    \"numero_resolucion\": \"5541212\",\r\n    \"nombre\": \"Federico\",\r\n    \"apellido\": \"Zar\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "indexCandidatos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showCandidatos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos/635eb09698adf8dd0b16b1a0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos",
+										"635eb09698adf8dd0b16b1a0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCandidatos",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos/635eb00858b626cb7e6b1c79",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos",
+										"635eb00858b626cb7e6b1c79"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "editarCandidatos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cedula\": \"1111111\",\r\n    \"numero_resolucion\": \"222222\",\r\n    \"nombre\": \"Mario\",\r\n    \"apellido\": \"Bedoya\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos/635eb09698adf8dd0b16b1a0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos",
+										"635eb09698adf8dd0b16b1a0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "setPartidoCandidatos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/candidatos/635eb76898adf8dd0b16b1ae/partido/635eb3ec98adf8dd0b16b1a8",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos",
+										"635eb76898adf8dd0b16b1ae",
+										"partido",
+										"635eb3ec98adf8dd0b16b1a8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MESAS",
+					"item": [
+						{
+							"name": "createMesas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numero\": \"5\",\r\n    \"cantidad_inscritos\": 66\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/mesas",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "indexMesas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/mesas",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showMesas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/mesas/635b354c5272f313252fdd6c",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas",
+										"635b354c5272f313252fdd6c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMesas",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/mesas/635eb0ba98adf8dd0b16b1a1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas",
+										"635eb0ba98adf8dd0b16b1a1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateMesas",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cantidad_inscritos\": 54,\r\n    \"numero\": \"4\"\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/mesas/635eb12d98adf8dd0b16b1a5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas",
+										"635eb12d98adf8dd0b16b1a5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RESULTADOS",
+					"item": [
+						{
+							"name": "createResultados",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numero_votos\": 38\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/resultados/candidato/635eb09698adf8dd0b16b1a0/mesa/635eb25a98adf8dd0b16b1a6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados",
+										"candidato",
+										"635eb09698adf8dd0b16b1a0",
+										"mesa",
+										"635eb25a98adf8dd0b16b1a6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "indexResultados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/resultados",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showResultados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/resultados/635b41ade076d6b65f92a2e2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados",
+										"635b41ade076d6b65f92a2e2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteResultados",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/resultados/635b41ade076d6b65f92a2e2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados",
+										"635b41ade076d6b65f92a2e2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateResultados",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numero_votos\": 35\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/resultados/635b41ade076d6b65f92a2e2/candidato/6359f07217b5f4ed214477b3/mesa/635b354c5272f313252fdd6c",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados",
+										"635b41ade076d6b65f92a2e2",
+										"candidato",
+										"6359f07217b5f4ed214477b3",
+										"mesa",
+										"635b354c5272f313252fdd6c"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PARTIDOS",
+					"item": [
+						{
+							"name": "createPartidos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Partido D\",\r\n    \"lema\": \"Del lado de los naDies\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/partidos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "indexPartidos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/partidos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showPartidos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/partidos/635dde1d6755cf009507be94",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos",
+										"635dde1d6755cf009507be94"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePartidos",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:9999/partidos/6359ead908bed65afcd2c1cf",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos",
+										"6359ead908bed65afcd2c1cf"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePartidos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Libertadores\",\r\n    \"lema\": \"A por ella!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/partidos/6359eaa508bed65afcd2c1cd",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos",
+										"6359eaa508bed65afcd2c1cd"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
